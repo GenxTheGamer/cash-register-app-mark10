@@ -1,4 +1,27 @@
+body {
+    text-align: center;
+}
+
+
+
+
+
 .container {
     display: flex;
     flex-direction: column;
+    padding: 0rem 1rem;
+}
+
+button {
+    width: 25%;
+    
+}
+
+
+.changeTable {
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
 }
