@@ -24,16 +24,16 @@ function calculateChange(billAndCashAmountDifference) {
   for (let i = 0; i < Notes.length; i++) {
     //Loop to iterate at each note to calculate amt of notes we will need.
     const numberofNotes = Math.trunc(billAndCashAmountDifference / Notes[i]); //Math.trunc is js function for mathematical stuff.
-    billAndCashAmountDifference %= Notes[i]; //Just like we do ++i we are differencing them each time
+    billAndCashAmountDifference %= Notes[i]; //Just like we do x += 1; here we are differencing them each time and updating.
     noOfNotes[i].innerText = numberofNotes;
   }
 }
 
 function hideMessage() {
-  Message.style.display = "none";
+  Message.style.display = "none"; //basically display:none;
 }
 
 function showMessage(msg) {
-  Message.style.display = "block";
-  Message.innerText = msg;
+  Message.style.display = "block"; //display: block;
+  Message.innerText = msg; //Changes <p>[[[[message]]]]</p> to the given argument in above else.
 }

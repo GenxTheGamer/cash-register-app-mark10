@@ -1,8 +1,25 @@
-body {
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+:root {
+    --primary-color: #2563EB;
+    --dark-grey: #4B5563;
+    --offwhite: #E5E7EB;
+    
 }
 
 
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+
+}
 
 
 
@@ -24,4 +41,64 @@ button {
 
 td{
     border: 1px solid black;
+}
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* margin-top: 5rem;
+    margin-bottom: 1rem; */
+}
+
+.primary-link {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+/** footer **/
+
+.footer{
+    margin-top: auto;
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+.footer .link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-head{
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
+
+.list-item-inline .footer-img {
+   min-height: 30px;
 }
